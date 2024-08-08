@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #FFFEFC;
+}
+
+.navbar {
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(217, 217, 219, 0.9);  
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.navbar .left-links, .navbar .right-links {
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-links .logo img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.navbar .left-links ul {
+    font-family: 'Montserrat';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .left-links li {
+    font-family: 'Montserrat';
+    margin-right: 15px;
+}
+
+.navbar .left-links a, .navbar .right-links a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar .right-links .btnRegistro {
+    font-family: 'Montserrat';
+    color: #333;
+    padding: 15px;
+}
+
+.profile a {
+    margin-right: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.details-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.product-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-title h1 {
+    font-size: 2em;
+    color: #4a362f;
+    margin: 0;
+}
+
+.title-line {
+    border: 1px solid #4a362f;
+    width: 50px;
+    margin: 10px auto;
+}
+
+.product-info {
+    color: #4a362f;
+    font-family: "Fjalla One";
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-image {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-description {
+    flex: 2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-description ul li {
+    margin-bottom: 10px;
+}
+
+.product-description ul li strong {
+    font-weight: bold;
+}
+
+.size-buttons {
+    margin-top: 10px;
+}
+
+.size-btn {
+    background-color: #ffffff;
+    color: #4a362f;
+    border: 2px solid #4a362f;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.size-btn:hover,
+.size-btn:focus {
+    background-color: #4a362f;
+    color: #fff;
+    border-color: #4a362f;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions .customize-btn,
+.actions .add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4a362f;
+    border: 2px solid #4a362f;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    margin-right: 10px;
+}
+
+.actions .customize-btn:hover,
+.actions .add-to-cart-btn:hover,
+.actions .customize-btn:focus,
+.actions .add-to-cart-btn:focus {
+    background-color: #4a362f;
+    color: #fff;
+    border-color: #4a362f;
+}

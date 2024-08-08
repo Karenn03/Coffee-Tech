@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #FFFEFC;
+}
+
+.navbar {
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(217, 217, 219, 0.9);  
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.navbar .left-links, .navbar .right-links {
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-links .logo img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.navbar .left-links ul {
+    font-family: 'Montserrat';
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .left-links li {
+    font-family: 'Montserrat';
+    margin-right: 15px;
+}
+
+.navbar .left-links a, .navbar .right-links a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar .right-links .btnRegistro {
+    font-family: 'Montserrat';
+    color: #333;
+    padding: 15px;
+}
+
+.hero {
+    background: url(../Imágenes/landing.jpg) no-repeat center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(74, 54, 47, 0.38);
+    z-index: 1; 
+}
+
+.hero h1 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+    margin: 0;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-family: 'Fjalla One';
+    font-size: 120px;
+    margin: 10px 0 0;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+.landing-page {
+    padding: 20px;
+    text-align: center;
+}
+
+.pide-aqui, .ofertas-especiales {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 170px;
+    background-color: #B7AE8F;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pide-aqui h2,
+.ofertas-especiales h2 {
+    color: #B7AE8F;
+    margin-top: 0;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.coffee-image {
+    margin: 20px 0;
+    width: 370px;
+    height: auto;
+}
+
+.order-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.order-option {
+    width: 30%;
+    text-align: left;
+}
+
+.order-option.right {
+    text-align: right;
+}
+
+.order-option h3 {
+    color: #B7AE8F;
+    text-align: center;
+    font-size: 30px;
+}
+
+.order-option p {
+    font-size: 20px;
+}
+
+.order-option button {
+    background-color: #4A362F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 190px;
+    font-size: 15px;
+}
+
+.order-option button:hover {
+    background-color: #B7AE8F;
+}
+
+.ofertas-especiales h4 {
+    color: #4A362F;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.promotions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 50px;
+}
+
+.promo-item {
+    width: 45%;
+    background-color: #FFFEFC;
+    border: 2px solid #978F84;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    min-height: 160px;
+}
+
+.promo-item img {
+    width: auto;
+    height: 120px;
+    margin-right: 15px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.promo-content {
+    text-align: left;
+}
+
+.promo-item h3 {
+    color: #978F84;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.promo-item p {
+    font-size: 16px;
+    margin: 15px 0px;
+}
+
+.promo-item button {
+    background-color: #978F84;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.promo-item button:hover {
+    background-color: #4A362F;
+}
+
+@media (max-width: 768px) {
+    .order-container, .promotions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-option, .promo-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .promo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .promo-item img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+.subscription-section {
+    position: relative;
+    display: flex;
+    padding: 100px 0; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    height: 300px;
+    background-image: url(../Imágenes/fondo-ofertas-exclusivas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscription-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 13, 12, 0.8);
+    z-index: 1;
+}
+
+.subscription-section .ripped-edge-top {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background: url(../Imágenes/overlay-top.png) center/cover no-repeat;
+    z-index: 2;
+}
+
+.subscription-section .ripped-edge-bottom {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px; 
+    background: url(../Imágenes/overlay-bottom.png) center/cover no-repeat;
+    z-index: 2;
+}
+
+.subscription-overlay {
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subscription-section h2 {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+    color: #FFFEFC;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.subscription-section p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+    color: #FFFEFC;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    z-index: 2; 
+    width: 210px;
+    background-color: #FFFEFC;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #B7AE8F;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+}
+
+.subscription-form button:hover {
+    background-color: #978F84;
+}
+
+
+
+
+
+
+
+
+
+
+
+.reviews-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.reviews-section h4 {
+    color: #4A362F;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    color: #B7AE8F;
+    margin-top: 0;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.overall-rating {
+    text-align: center;
+    display: grid;
+}
+
+.rating-number {
+    font-family: 'Montserrat';
+    font-size: 3.4em;
+    font-weight: bold;
+    flex-basis: 20%;
+    text-align: center;
+    color: #4A362F;
+}
+
+.number-rating {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: bold;
+    flex-basis: 20%;
+    text-align: right;
+    color: #4A362F;
+}
+
+.stars {
+    color: #4A362F;
+    font-size: 1.6em;
+}
+
+.total-reviews {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    color: #4A362F;
+}
+
+.detailed-ratings {
+    flex-grow: 1;
+    padding-left: 25px;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.category {
+    flex-basis: 20%;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+.category2 {
+    flex-basis: 20%;
+    text-align: left;
+    color: #7a7a7a;
+}
+
+.rating-bar {
+    width: 60%;
+    height: 10px;
+    background-color: #ddd;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.rating-fill {
+    height: 100%;
+    background-color: #B7AE8F;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #4A362F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+.buttons .review-button:hover {
+    background-color: #B7AE8F;
+}
+
+.right-buttons {
+    display: flex;
+}
+
+.right-buttons button {
+    background-color: #4A362F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+.right-buttons button:hover {
+    background-color: #B7AE8F;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #FFFEFC;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #B7AE8F;
+    margin-right: 10px;
+}
+
+.comment-meta {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-date {
+    font-size: 0.9em;
+    color: #A6A6A6;
+    margin-left: 10px;
+}
+
+.comment-body {
+    font-size: 0.9em;
+    color: #000000;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.star {
+    color: #B7AE8F;
+    font-size: 1.22em;
+}
