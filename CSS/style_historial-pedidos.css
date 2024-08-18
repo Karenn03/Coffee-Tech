@@ -127,20 +127,20 @@ body {
     margin-top: 42px;
 }
 
-.title-container {
+.header-container {
     margin-top: 60px; 
     margin-bottom: 20px;
     margin-left: 20px;
 }
 
-.title-container h2 {
+.header-container h2 {
     font-family: "Fjalla One";
     font-size: 36px;
     color: #4e3d3b;
     margin-bottom: 20px;
 }
 
-.profile {
+.order-history {
     padding: 30px; 
     background-color: #B9B4AD;
     border-radius: 15px;
@@ -152,7 +152,7 @@ body {
     z-index: 1;
 }
 
-.reservations-content {
+.orders-message {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -163,13 +163,13 @@ body {
     width: 100%;
 }
 
-.reservations-content i {
+.orders-message i {
     font-size: 170px;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
-.reservations-content p {
+.orders-message p {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
     font-size: 18px;
@@ -177,11 +177,11 @@ body {
     margin: 8px 0;
 }
 
-.reservations-content p:first-of-type {
+.orders-message p:first-of-type {
     color: #4A362F;
 }
 
-.reservations-content .btn-reserva {
+.orders-message .btn-order-now {
     font-family: 'Montserrat', sans-serif;
     background-color: #4A362F;
     color: #fff;
@@ -195,6 +195,6 @@ body {
     font-size: 14px;
 }
 
-.reservations-content .btn-reserva:hover {
+.orders-message .btn-order-now:hover {
     background-color: #3a2b26;
 }
