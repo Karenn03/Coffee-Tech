@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mis pedidos </title>
+    <link rel="stylesheet" href="css/style_mis-pedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Section Navbar Start -->
+
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <div class="left-links">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand px-lg-4 m-0"><img src="Imágenes/logo.png" alt="Coffee Tech Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="menu.html" class="nav-item nav-link"> Menú </a></li>
+                    <li><a href="mis-pedidos.html" class="nav-item nav-link active"> Mis Pedidos </a></li>
+                    <li><a href="#" class="nav-item nav-link"> Reservar Mesa </a></li>
+                    <li><a href="#" class="nav-item nav-link"> Carrito </a></li>
+                </ul>
+            </div>
+            <div class="right-links">
+                <a href="inicio-sesion.html">Inicia Sesión</a>
+                <a href="registro.html" class="btnRegistro">Regístrate</a>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Section Navbar End -->   
+
+    <div class="filters-search-container">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Todos</button>
+            <button type="button" class="btn btn-outline-primary">Preparando</button>
+            <button type="button" class="btn btn-outline-primary">Enviado</button>
+            <button type="button" class="btn btn-outline-primary">Para recoger</button>
+            <button type="button" class="btn btn-outline-primary">Entregado</button>
+        </div>
+        <div class="search-bar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Nombre del producto / ID del pedido" aria-label="Buscar">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </form>
+        </div>
+    </div>
+
+    <main class="order-history">
+        <div class="orders-message">
+            <i class="fas fa-shopping-bag"></i>
+            <p>¡Haz tu primera compra!</p>
+            <p>Aquí podrás ver tus compras y hacer el seguimiento de tus envíos.</p>
+            <a href="menu.html" class="btn-order-now">Compra ahora</a>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="JS/mis-pedidos.js"></script>
+
+</body>
+</html>
