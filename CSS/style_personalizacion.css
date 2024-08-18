@@ -111,6 +111,8 @@ body {
     color: #fff;
 }
 
+
+
 .profile {
     margin-top: 30px;
     width: 80%;
@@ -361,4 +363,37 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+    .favorites {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .favorites {
+        grid-template-columns: 1fr;
+    }
+
+    .favorite-item {
+        width: 100%;
+    }
+
+    .profile {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px 0;
+    }
+
+    .sidebar ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
 }
