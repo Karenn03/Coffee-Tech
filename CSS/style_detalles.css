@@ -153,9 +153,15 @@ body {
 
 .size-btn:hover,
 .size-btn:focus {
-    background-color: #4a362f;
+    background-color: #4A362F;
     color: #fff;
-    border-color: #4a362f;
+    border-color: #4A362F;
+}
+
+.size-btn.active {
+    background-color: #4A362F;
+    color: #fff;
+    border-color: #4A362F;
 }
 
 .actions {
