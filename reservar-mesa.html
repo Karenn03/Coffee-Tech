@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reservar Mesa </title>
+    <link rel="stylesheet" href="css/style_reservar-mesa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Section Navbar Start -->
+
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <div class="left-links">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand px-lg-4 m-0"><img src="Imágenes/logo.png" alt="Coffee Tech Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="menu.html" class="nav-item nav-link"> Menú </a></li>
+                    <li><a href="mis-pedidos.html" class="nav-item nav-link"> Mis Pedidos </a></li>
+                    <li><a href="reservar-mesa.html" class="nav-item nav-link active"> Reservar Mesa </a></li>
+                    <li><a href="#" class="nav-item nav-link"> Carrito </a></li>
+                </ul>
+            </div>
+            <div class="right-links">
+                <a href="inicio-sesion.html">Inicia Sesión</a>
+                <a href="registro.html" class="btnRegistro">Regístrate</a>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Section Navbar End -->
+
+    <section class="reservar-mesa-section">
+        <div class="reservar-mesa-container">
+            <h1>Reservar Mesa</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="form-group">
+                    <label for="personas">Número de Personas:</label>
+                    <input type="number" id="personas" name="personas" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="requests">Peticiones especiales:</label>
+                    <textarea id="requests" name="requests"></textarea>
+                </div>
+                <button type="submit" class="btn-reservar">Reservar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
