@@ -35,8 +35,8 @@ body {
 .form-container {
     background-color: rgba(151, 143, 132, 0.95);
     border-radius: 20px;
-    padding: 20px;
-    max-width: 350px;
+    padding: 30px;
+    max-width: 420px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -58,7 +58,7 @@ body {
 .form-container h2 {
     font-family: 'Montserrat';
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
     color: #4A362F;
 }
@@ -70,7 +70,7 @@ body {
 
 .registration-form .form-group {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .registration-form .form-group i {
@@ -107,7 +107,7 @@ body {
 }
 
 .social-login {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .social-login p {

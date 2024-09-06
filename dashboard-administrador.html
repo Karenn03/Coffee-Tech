@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Administrador</title>
+    <link rel="stylesheet" href="css/style_dashboard-administrador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Section Navbar Start -->
+
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <div class="left-links">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand px-lg-4 m-0"><img src="Imágenes/logo.png" alt="Coffee Tech Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="menu.html" class="nav-item nav-link active"> Menú </a></li>
+                    <li><a href="mis-pedidos.html" class="nav-item nav-link"> Mis Pedidos </a></li>
+                    <li><a href="reservar-mesa.html" class="nav-item nav-link"> Reservar Mesa </a></li>
+                    <li><a href="#" class="nav-item nav-link"> Carrito </a></li>
+                </ul>
+            </div>
+            <div class="right-links">
+                <a href="inicio-sesion.html">Inicia Sesión</a>
+                <a href="registro.html" class="btnRegistro">Regístrate</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Section Navbar End -->
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="menu">
+                <li><a href="#" class="menu-item" onclick="showSection('promociones', this)"><i class="fas fa-tags"></i> Promociones</a></li>
+                <li><a href="#" class="menu-item" onclick="showSection('roles', this)"><i class="fas fa-user-shield"></i> Roles</a></li>
+                <li><a href="#" class="menu-item" onclick="showSection('productos', this)"><i class="fas fa-coffee"></i> Productos</a></li>
+                <li><a href="#" class="menu-item" onclick="showSection('tipos-productos')"><i class="fas fa-boxes"></i> Tipos de Productos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Promociones -->
+            <section id="promociones" class="dashboard-section">
+                <h2>Crear Promociones</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre-promocion">Nombre de la Promoción:</label>
+                        <input type="text" id="nombre-promocion" name="nombre-promocion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion-promocion">Descripción:</label>
+                        <textarea id="descripcion-promocion" name="descripcion-promocion" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inicio-promocion">Fecha de Inicio:</label>
+                        <input type="date" id="inicio-promocion" name="inicio-promocion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fin-promocion">Fecha Final:</label>
+                        <input type="date" id="fin-promocion" name="fin-promocion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-producto">Tipo de Descuento:</label>
+                        <select id="tipo-producto" name="tipo-producto" required>
+                            <option value="porCantidad">Descuento por Cantidad</option>
+                            <option value="porTemporada">Descuento por Temporada</option>
+                            <option value="porFidelidad">Descuento por Fidelidad</option>
+                            <option value="deLanzamiento">Descuento de Lanzamiento</option>
+                            <option value="porCompraMínima">Descuento por Compra Mínima</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor-descuento">Valor del Descuento:</label>
+                        <input type="number" id="valor-descuento" name="valor-descuento" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="activa">Activa</option>
+                            <option value="inactiva">Inactiva</option>
+                            <option value="programada">Programada</option>
+                            <option value="suspendida">Suspendida</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Crear Promoción</button>
+                </form>
+            </section>
+
+            <!-- Roles -->
+            <section id="roles" class="dashboard-section hidden">
+                <h2>Crear Roles</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre-rol">Nombre del Rol:</label>
+                        <input type="text" id="nombre-rol" name="nombre-rol" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Crear Rol</button>
+                </form>
+            </section>
+
+            <!-- Productos -->
+            <section id="productos" class="dashboard-section hidden">
+                <h2>Crear Productos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre-producto">Nombre del Producto:</label>
+                        <input type="text" id="nombre-producto" name="nombre-producto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion-producto">Descripción:</label>
+                        <input type="text" id="descripcion-producto" name="descripcion-producto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio:</label>
+                        <input type="number" id="precio" name="precio" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="stock">Stock:</label>
+                        <input type="number" id="stock" name="stock" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-producto">Tipo de Producto:</label>
+                        <select id="tipo-producto" name="tipo-producto" required>
+                            <option value="bebidasCalientes">Bebidas Calientes</option>
+                            <option value="bebidasFrias">Bebidas Frías</option>
+                            <option value="panaderiaPasteleria">Panadería y Pastelería</option>
+                            <option value="desayunosBrunch">Desayunos y Brunch</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Crear Producto</button>
+                </form>
+            </section>
+
+            <!-- Tipos de Productos -->
+            <section id="tipos-productos" class="dashboard-section hidden">
+                <h2>Crear Tipos de Productos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre-tipo-producto">Nombre del Tipo de Producto:</label>
+                        <input type="text" id="nombre-tipo-producto" name="nombre-tipo-producto" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Crear Tipo de Producto</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
