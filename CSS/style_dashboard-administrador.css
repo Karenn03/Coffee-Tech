@@ -107,7 +107,12 @@ body {
     color: #fff;
 }
 
-/* Contenido principal */
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
 .main-content {
     flex: 1;
     padding: 40px;
@@ -163,7 +168,6 @@ body {
     background-color: #3a2e2d;
 }
 
-/* Mostrar sección activa */
 .dashboard-section:not(.hidden) {
     display: block;
 }

@@ -570,6 +570,78 @@ body {
 
 
 
+
+
+.comment-form-container {
+    background-color: #FFFEFC; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.comment-form-container h3 {
+    color: #4A362F;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4A362F;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #4A362F;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #4A362F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.submit-button:hover {
+    background-color: #B7AE8F;
+}
+
+#toggle-review-form {
+    background-color: #4A362F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin: 0 5px;
+}
+
+#toggle-review-form:hover {
+    background-color: #B7AE8F;
+}
+
+
+
+
+
+
+
 footer {
     background-image: url(../Imágenes/footer.jpg);
     background-size: cover;

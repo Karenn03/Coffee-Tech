@@ -23,7 +23,7 @@
                     <li><a href="menu.html" class="nav-item nav-link active"> Menú </a></li>
                     <li><a href="mis-pedidos.html" class="nav-item nav-link"> Mis Pedidos </a></li>
                     <li><a href="reservar-mesa.html" class="nav-item nav-link"> Reservar Mesa </a></li>
-                    <li><a href="#" class="nav-item nav-link"> Carrito </a></li>
+                    <li><a href="carrito.compras.html" class="nav-item nav-link"> Carrito </a></li>
                 </ul>
             </div>
             <div class="right-links">
@@ -215,12 +215,38 @@
             </div>
         </div>
         <div class="buttons">
-            <button class="review-button">Escribir una reseña</button>
+            <button class="review-button" id="toggle-review-form">Escribir una reseña</button>
             <div class="right-buttons">
                 <button class="filter-button">Filtrar</button>
                 <button class="sort-button">Ordenar</button>
             </div>
         </div>
+
+        <!-- Formulario para agregar comentario (oculto por defecto) -->
+        <div id="comment-form-container" class="comment-form-container" style="display: none;">
+            <h3>Deja tu comentario</h3>
+            <form id="comment-form">
+
+                <div class="form-group">
+                    <label for="user-rating">Calificación:</label>
+                    <select id="user-rating" name="user-rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comment-text">Comentario:</label>
+                    <textarea id="comment-text" name="comment-text" rows="4" required></textarea>
+                </div>
+                <!-- Campo oculto para fecha y hora -->
+                <input type="hidden" id="comment-date" name="comment-date">
+                <button type="submit" class="submit-button">Enviar Comentario</button>
+            </form>
+        </div>
+
         <div class="comments">
             <div class="comment">
                 <div class="comment-header">
@@ -332,5 +358,7 @@
     
     <!-- Section Footer End -->
     
+    <script src="JS/index.js"></script>
+
 </body>
 </html>

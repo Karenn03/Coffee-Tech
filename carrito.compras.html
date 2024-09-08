@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi perfil </title>
-    <link rel="stylesheet" href="css/style_historial-pedidos.css">
+    <link rel="stylesheet" href="css/style_carrito-compras.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Coffee Tech | Carrito Compras</title>
 </head>
 <body>
 
@@ -30,38 +30,27 @@
             </div>
         </nav>
     </div>
-
+    
     <!-- Section Navbar End -->
 
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="datos-personales.html">Datos Personales</a></li>
-                <li><a href="notificaciones.html">Notificaciones</a></li>
-                <li><a href="personalización.html">Personalización</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-                <li><a href="historial-pedidos.html" class="active">Historial de Pedidos</a></li>
-                <li><a href="seguridad-y-privacidad.html">Seguridad y Privacidad</a></li>
-            </ul>
-        </nav>
-
-        <div class="content">
-            <div class="header-container">
-                <h2>Estos son los pedidos que haz realizado</h2>
-            </div>
-            
-            <main class="order-history">
-                <div class="orders-message">
-                    <i class="fas fa-shopping-bag"></i>
-                    <p>Parece que no haz realizado ningún pedido...</p>
-                    <p>Explora nuestro menú y disfruta de nuestras deliciosas opciones</p>
-                    <a href="menu.html" class="btn-order-now">¡Haz tu primer pedido ahora!</button>
-                </div>
-            </main>
+    <!-- Contenedor del Carrito -->
+    <div class="carrito-container">
+        <!-- Carrito vacío -->
+        <div id="carrito-vacio" class="carrito-vacio">
+            <i class="fa fa-shopping-cart"></i>
+            <h2>Parece que tu carrito de compras está vacío...</h2>
+            <p>Empieza agregando tus productos favoritos.</p>
+            <a href="menu.html">Agrega tu primer producto</a>
+        </div>
+        
+        <!-- Resumen del pedido -->
+        <div id="carrito-lleno" class="carrito-lleno">
+            <h2>Resumen del pedido</h2>
+            <p>Aquí verás los detalles de tu compra una vez que agregues productos.</p>
         </div>
     </div>
-    
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="JS/carrito.js"></script>
 
 </body>
-</html>        
+</html>
